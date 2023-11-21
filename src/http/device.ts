@@ -748,6 +748,7 @@ export class Device extends TypedEmitter<DeviceEvents> {
             type == DeviceType.CAMERA2C ||
             type == DeviceType.INDOOR_CAMERA ||
             type == DeviceType.INDOOR_PT_CAMERA ||
+            type == DeviceType.INDOOR_PTZ_CAMERA ||
             type == DeviceType.FLOODLIGHT ||
             type == DeviceType.DOORBELL ||
             type == DeviceType.BATTERY_DOORBELL ||
@@ -868,6 +869,7 @@ export class Device extends TypedEmitter<DeviceEvents> {
         if (type == DeviceType.INDOOR_CAMERA ||
             type == DeviceType.INDOOR_CAMERA_1080 ||
             type == DeviceType.INDOOR_PT_CAMERA ||
+            type == DeviceType.INDOOR_PTZ_CAMERA ||
             type == DeviceType.INDOOR_PT_CAMERA_1080 ||
             type == DeviceType.INDOOR_OUTDOOR_CAMERA_1080P ||
             type == DeviceType.INDOOR_OUTDOOR_CAMERA_1080P_NO_LIGHT ||
@@ -879,6 +881,7 @@ export class Device extends TypedEmitter<DeviceEvents> {
 
     static isPanAndTiltCamera(type: number): boolean {
         if (type == DeviceType.INDOOR_PT_CAMERA ||
+            type == DeviceType.INDOOR_PTZ_CAMERA ||
             type == DeviceType.INDOOR_PT_CAMERA_1080 ||
             type == DeviceType.FLOODLIGHT_CAMERA_8423 ||
             type == DeviceType.INDOOR_COST_DOWN_CAMERA)
