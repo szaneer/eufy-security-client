@@ -884,7 +884,7 @@ export const GenericTypeProperty: PropertyMetadataNumeric = {
         100: "Indoor Cost Down Camera",
         101: "Camera Gun",
         102: "Camera Snail",
-        104: "Indoor Camera PT"
+        104: "Indoor Camera PTZ"
         110: "Starlight 4G LTE", //T8150
         131: "Camera Garage T8453 Common",
         132: "Garage-Control Cam E110 (T8452)",
